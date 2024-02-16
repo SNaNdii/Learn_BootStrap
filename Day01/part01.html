@@ -2,12 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        .container, .row{
+            border: 1px solid black;
+        }
+        .container-fluid{
+            margin-bottom: 20px;
+        }
+        .col, .col-sm, .col-md{
+            border: 1px solid rgb(84, 191, 233);
+        }
+    </style>
 </head>
 <body>
-    <h1>Here is the day01 for button</h1>
-    <a href="" class="btn btn-primary">Click Me</a>
+    <!-- container class -->
+    <h4 class="container">Welcome to Day 01 Learning</h4>
+
+    <!-- row class for creating elements in a row -->
+    <div class="container-fluid">
+        <h6>Create Row</h6>
+        <div class="row justify-content-around">
+            <div>Home</div>
+            <div>Login</div>
+            <div>SignUp</div>
+            <div>Contact Us</div>
+        </div>
+    </div>
+
+
+    <!-- col classes for creating column/div inside div -->
+    <div class="container-fluid">
+        <h6>Create Column</h6>
+        <div class="row">
+            <div class="col">Column 01</div>
+            <div class="col">Column 02</div>
+            <div class="col">Column 03</div>
+            <div class="col">Column 04</div>
+            <div class="col">Column 05</div>
+        </div>
+    </div>
+
+
+    <!-- w-100 class used for break the columns  manually   -->
+    <div class="container-fluid">
+        <h6>Break the columns  manually</h6>
+        <div class="row">
+            <div class="col">Column 01</div>
+            <div class="col">Column 02</div>
+            <div class="w-100"></div>  <!-- Manual Break in columns  -->
+            <div class="col">Column 03</div>
+            <div class="col">Column 04</div>
+            <div class="col">Column 05</div>
+            <div class="col">Column 06</div>
+            <div class="w-100"></div>  <!-- Manual Break in columns  -->
+            <div class="col">Column 07</div>
+            <div class="w-100"></div>  <!-- Manual Break in columns  -->
+            <div class="col">Column 08</div>
+            <div class="col">Column 09</div>
+            <div class="col">Column 10</div>
+        </div>
+    </div>
+
+
+        <!-- break the columns automatically by using row-cols-4, but responsiveness is not good in this -->
+        <div class="container-fluid">
+            <h6>Break the columns  manually</h6>
+            <div class="row row-cols-4">
+                <div class="col">Column 01</div>
+                <div class="col">Column 02</div>
+                <div class="col">Column 03</div>
+                <div class="col">Column 04</div>
+                <div class="col">Column 05</div>
+                <div class="col">Column 06</div>
+                <div class="col">Column 07</div>
+                <div class="col">Column 08</div>
+                <div class="col">Column 09</div>
+                <div class="col">Column 10</div>
+            </div>
+        </div>
+
+
+        <!-- break the columns by using cols-lg, , cols-sm -->
+        <div class="container-fluid">
+            <h6>Break the columns  manually</h6>
+            <div class="row">
+                <div class="col-md">Column 01</div>
+                <div class="col-md">Column 02</div>
+                <div class="col-md">Column 03</div>
+                <div class="col-sm">Column 04</div>
+                <div class="col-sm">Column 05</div>
+                <div class="col-sm">Column 06</div>
+            </div>
+        </div>
+
+
 </body>
 </html>
